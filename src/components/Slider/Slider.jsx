@@ -1,4 +1,3 @@
-import React from 'react';
 import './Slider.scss';
 import sliderImg1 from '../../assets/slider-1.jpg';
 import sliderImg2 from '../../assets/slider-2.jpg';
@@ -8,21 +7,6 @@ import { useState } from 'react';
 
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-
-  //const data = [
-  //  {
-  //    id: 1,
-  //    img: { sliderImg1 },
-  //  },
-  //  {
-  //    id: 2,
-  //    img: '../../assets/slider-1.jpg',
-  //  },
-  //  {
-  //    id: 3,
-  //    img: '../../assets/slider-1.jpg',
-  //  },
-  //];
 
   const prevSlide = () => {
     setCurrentSlide(currentSlide === 0 ? 2 : currentSlide - 1);

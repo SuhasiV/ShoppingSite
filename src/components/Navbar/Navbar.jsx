@@ -1,8 +1,12 @@
 import { Link } from 'react-router-dom';
 import { AiOutlineHeart, AiOutlineShoppingCart } from 'react-icons/ai';
 import './Navbar.scss';
+import { useState } from 'react';
+import Cart from '../Cart/Cart';
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="navbar">
       <div className="wrapper">
@@ -46,13 +50,14 @@ const Navbar = () => {
           </div>
           <div className="icons">
             <AiOutlineHeart fontSize="25px" />
-            <div className="cartIcon">
+            <div className="cartIcon" onClick={() => setOpen(!open)}>
               <AiOutlineShoppingCart fontSize="25px" />
               <span>0</span>
             </div>
           </div>
         </div>
       </div>
+      {open && <Cart />}
     </div>
   );
 };

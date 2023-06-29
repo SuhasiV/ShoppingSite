@@ -3,6 +3,8 @@ import FeaturedProducts from '../../components/FeaturedProducts/FeaturedProducts
 import Slider from '../../components/Slider/Slider';
 import './Home.scss';
 
+//Su982836
+
 const Home = () => {
   return (
     <div className="home">

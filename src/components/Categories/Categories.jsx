@@ -8,7 +8,7 @@ const Categories = () => {
           <img src="../menCat.jpeg" alt="" />
           <button>
             <Link className="link" to="/products/1">
-              Shop
+              MEN
             </Link>
           </button>
         </div>
@@ -21,7 +21,7 @@ const Categories = () => {
               <img src="../featCat.jpg" alt="" />
               <button>
                 <Link className="link" to="/products/1">
-                  Shop
+                  SALE
                 </Link>
               </button>
             </div>
@@ -31,7 +31,7 @@ const Categories = () => {
               <img src="../purseCat.jpg" alt="" />
               <button>
                 <Link className="link" to="/products/1">
-                  Shop
+                  PURSE
                 </Link>
               </button>
             </div>
@@ -43,7 +43,7 @@ const Categories = () => {
               <img src="../watchCat.jpg" alt="" />
               <button>
                 <Link className="link" to="/products/1">
-                  Shop
+                  WATCH
                 </Link>
               </button>
             </div>
@@ -53,20 +53,19 @@ const Categories = () => {
               <img src="../winterCat.jpg" alt="" />
               <button>
                 <Link className="link" to="/products/1">
-                  Shop
+                  WINTER
                 </Link>
               </button>
             </div>
           </div>
         </div>
       </div>
-
       <div className="col">
         <div className="row">
-          <img src="../womenCat.jpeg" alt="" />
+          <img src="../womenCat.jpg" alt="" />
           <button>
-            <Link className="link" to="/products/1">
-              Shop
+            <Link className="link" to="/products/2">
+              WOMAN
             </Link>
           </button>
         </div>

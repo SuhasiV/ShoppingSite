@@ -1,42 +1,11 @@
 import Card from '../Card/Card';
 import './FeaturedProducts.scss';
+import useFetch from '../../hooks/useFetch';
 
 const FeaturedProducts = ({ type }) => {
-  const data = [
-    {
-      id: 1,
-      img: '../feat1.png',
-      img2: '../feat2.png',
-      title: ' Black Simple T-Shirt',
-      isNew: true,
-      oldPrice: 19,
-      newPrice: 12,
-    },
-    {
-      id: 2,
-      img: '../feat1.png',
-      img2: '../feat2.png',
-      title: ' Black Simple T-Shirt',
-      isNew: true,
-      oldPrice: 19,
-      newPrice: 12,
-    },
-    {
-      id: 3,
-      img: '../feat1.png',
-      img2: '../feat2.png',
-      title: ' Black Simple T-Shirt',
-      oldPrice: 19,
-      newPrice: 12,
-    },
-    {
-      id: 4,
-      img: '../feat1.png',
-      title: ' Black Simple T-Shirt',
-      oldPrice: 19,
-      newPrice: 12,
-    },
-  ];
+  const { data, loading, error } = useFetch(
+    `/products?populate=*&[filters][type][$eq]=${type}`
+  );
 
   return (
     <div className="featuredProducts">
@@ -50,9 +19,11 @@ const FeaturedProducts = ({ type }) => {
         </p>
       </div>
       <div className="bottom">
-        {data.map(item => (
-          <Card item={item} key={item.id} />
-        ))}
+        {error
+          ? 'Something is wrong'
+          : loading
+          ? 'loading'
+          : data.map(item => <Card item={item} key={item.id} />)}
       </div>
     </div>
   );

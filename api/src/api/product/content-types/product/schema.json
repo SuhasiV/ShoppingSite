@@ -44,8 +44,15 @@
       "type": "decimal"
     },
     "isNew": {
-      "type": "boolean",
-      "default": false
+      "type": "boolean"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "normal",
+        "featured",
+        "trending"
+      ]
     },
     "categories": {
       "type": "relation",
@@ -58,14 +65,6 @@
       "relation": "manyToMany",
       "target": "api::sub-category.sub-category",
       "inversedBy": "products"
-    },
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "normal",
-        "featured",
-        "trending"
-      ]
     }
   }
 }

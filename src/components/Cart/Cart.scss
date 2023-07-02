@@ -27,15 +27,10 @@
     }
 
     .details {
+      overflow: hidden;
       h1 {
         font-size: 18px;
         font-weight: 500;
-      }
-
-      p {
-        color: gray;
-        margin-bottom: 10px;
-        font-size: 14px;
       }
 
       .price {

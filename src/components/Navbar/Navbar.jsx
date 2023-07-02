@@ -3,9 +3,11 @@ import { AiOutlineHeart, AiOutlineShoppingCart } from 'react-icons/ai';
 import './Navbar.scss';
 import { useState } from 'react';
 import Cart from '../Cart/Cart';
+import { useSelector } from 'react-redux';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const products = useSelector(state => state.cart.products);
 
   return (
     <div className="navbar">
@@ -52,7 +54,7 @@ const Navbar = () => {
             <AiOutlineHeart fontSize="25px" />
             <div className="cartIcon" onClick={() => setOpen(!open)}>
               <AiOutlineShoppingCart fontSize="25px" />
-              <span>0</span>
+              <span>{products.length}</span>
             </div>
           </div>
         </div>

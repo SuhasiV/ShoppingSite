@@ -1,8 +1,46 @@
+@import '../../css-config/mixins.scss';
+
 .slider {
-  height: calc(100vh - 60px);
+  height: calc(60vh - 60px);
   width: 100vw;
   position: relative;
+  overflow: hidden;
+  @include md {
+    height: calc(100vh - 60px);
+  }
 
+  .slider1 {
+    position: relative;
+
+    .slider1Title {
+      position: absolute;
+      top: 20%;
+      bottom: 0;
+      left: 50%;
+      right: 0;
+      font-size: 23px;
+      letter-spacing: 2px;
+      color: #fff;
+      @include md {
+        font-size: 28px;
+      }
+    }
+    .slider1Text {
+      position: absolute;
+      top: 25%;
+      bottom: 0;
+      left: 50%;
+      right: 0;
+      font-size: 15px;
+      font-family: arial;
+      text-align: right;
+      font-style: italic;
+      color: #fff;
+      @include md {
+        font-size: 28px;
+      }
+    }
+  }
   .container {
     height: 100%;
     width: 300vw;
@@ -24,7 +62,10 @@
     right: 0;
     margin: auto;
     gap: 10px;
-    bottom: 80px;
+    bottom: 30px;
+    @include md {
+      bottom: 80px;
+    }
 
     .icon {
       width: 50px;

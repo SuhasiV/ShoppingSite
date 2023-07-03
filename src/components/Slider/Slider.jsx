@@ -22,9 +22,21 @@ const Slider = () => {
         className="container"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
-        <img src={sliderImg1} alt="" />
-        <img src={sliderImg2} alt="" />
-        <img src={sliderImg3} alt="" />
+        <div className="slider1">
+          <img src={sliderImg1} alt="" />
+          <div className="slider1Title">CHICKCOTOUR</div>
+          <div className="slider1Text">
+            Fashion is the armor to survive the reality of everyday life.
+          </div>
+        </div>
+        <div className="slider2">
+          {' '}
+          <img src={sliderImg2} alt="" />
+        </div>
+        <div className="slider3">
+          {' '}
+          <img src={sliderImg3} alt="" />
+        </div>
       </div>
       <div className="icons">
         <div className="icon" onClick={prevSlide}>

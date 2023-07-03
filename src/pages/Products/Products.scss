@@ -1,3 +1,5 @@
+@import '../../css-config/mixins.scss';
+
 .products {
   display: flex;
   padding: 20px 20px;
@@ -13,7 +15,11 @@
 
       h2 {
         font-weight: 400;
+        font-size: 20px;
         margin-bottom: 20px;
+        @include md {
+          font-size: 24px;
+        }
       }
 
       .inputItem {

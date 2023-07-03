@@ -45,15 +45,10 @@ const Navbar = () => {
               CONTACT
             </Link>
           </div>
-          <div className="item">
-            <Link className="link" to="/">
-              STORES
-            </Link>
-          </div>
           <div className="icons">
-            <AiOutlineHeart fontSize="25px" />
+            <AiOutlineHeart />
             <div className="cartIcon" onClick={() => setOpen(!open)}>
-              <AiOutlineShoppingCart fontSize="25px" />
+              <AiOutlineShoppingCart />
               <span>{products.length}</span>
             </div>
           </div>

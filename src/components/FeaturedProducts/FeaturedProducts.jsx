@@ -12,10 +12,16 @@ const FeaturedProducts = ({ type }) => {
       <div className="top">
         <h1>{type} products</h1>
         <p>
-          cbsdcbdusujn jsdcnjsdcn dhsb j njcn cnnsdiuciucnsdjc
-          dscnsiuchweijcsndc iusdbcibcuescsalc jbdciusbuwncsac jbciuwciwoejc
-          jsncuihfceokdwokd jubnciuwefcuiwnwo ciushncuewf suicbewiud
-          cecfnehubasc edcuiwebiu icuebc iu
+          Introducing our curated collection of featured products, designed to
+          elevate your wardrobe with style and sophistication. Discover our
+          range of timeless essentials and on-trend pieces that are crafted with
+          impeccable quality and attention to detail. From luxurious cashmere
+          sweaters to tailored blazers, our selection offers versatile options
+          for any occasion. Embrace the season with our vibrant dresses,
+          showcasing playful prints and flattering silhouettes. Complement your
+          look with our range of accessories, including statement handbags and
+          elegant scarves. With our featured products, you can effortlessly
+          express your individuality and embrace the art of dressing well.
         </p>
       </div>
       <div className="bottom">

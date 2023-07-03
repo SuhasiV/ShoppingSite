@@ -1,14 +1,27 @@
+@import '../../css-config/mixins.scss';
+
 .categories {
-  display: flex;
-  height: 80vh;
-  gap: 10px;
   margin: 10px;
+  @include md {
+    display: flex;
+    gap: 10px;
+    height: 80vh;
+  }
+
+  .left,
+  .right {
+    margin-bottom: 30px;
+  }
 
   .col {
     display: flex;
     flex-direction: column;
     flex: 1;
-    gap: 10px;
+    @include md {
+      flex-direction: column;
+
+      gap: 10px;
+    }
   }
 
   .col-l {
@@ -18,13 +31,41 @@
   .row {
     display: flex;
     flex: 1;
-    gap: 10px;
     position: relative;
     overflow: hidden;
+    @include md {
+      gap: 10px;
+    }
 
-    button {
-      position: absolute;
-      min-width: 80px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .button {
+    position: absolute;
+    min-width: 80px;
+    background-color: #fff;
+    text-transform: uppercase;
+    height: 40px;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10000;
+    border: 0;
+    transition: all 0.3s ease;
+    font-family: arial;
+    font-size: 15px;
+
+    &:hover {
+      background-color: #2879fe !important;
+      color: #fff;
+      cursor: pointer;
+    }
+    /* min-width: 80px;
       width: fit-content;
       height: 40px;
       padding: 10px;
@@ -37,13 +78,6 @@
       border: none;
       background-color: #fff;
       text-transform: uppercase;
-      font-weight: 500;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+      font-weight: 500;*/
   }
 }

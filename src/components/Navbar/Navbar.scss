@@ -1,11 +1,19 @@
+@import '../../css-config/mixins.scss';
+
 .navbar {
-  height: 60px;
+  height: 45px;
+  @include md {
+    height: 60px;
+  }
 
   .wrapper {
-    padding: 10px 30px;
+    padding: 5px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include md {
+      padding: 10px 30px;
+    }
 
     .item {
       display: flex;
@@ -13,24 +21,42 @@
       font-size: 16px;
     }
     .left {
-      display: flex;
+      display: none;
       align-items: center;
       gap: 25px;
+      @include md {
+        display: flex;
+      }
     }
     .center {
-      font-size: 28px;
+      font-size: 23px;
       letter-spacing: 2px;
+      @include md {
+        font-size: 28px;
+      }
     }
     .right {
       display: flex;
       align-items: center;
       gap: 25px;
 
+      .item {
+        display: none;
+        @include md {
+          display: flex;
+        }
+      }
+
       .icons {
         display: flex;
         gap: 15px;
         color: #777;
         cursor: pointer;
+        align-items: center;
+        font-size: 21px;
+        @include md {
+          font-size: 25px;
+        }
 
         .cartIcon {
           position: relative;

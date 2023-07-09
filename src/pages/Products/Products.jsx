@@ -7,15 +7,15 @@ import useFetch from '../../hooks/useFetch';
 const Products = () => {
   const catId = parseInt(useParams().id);
 
-  const { id } = useParams();
-  console.log(id);
+  // const { id } = useParams();
 
   const [maxPrice, setMaxPrice] = useState(1000);
   const [sort, setSort] = useState();
   const [selectedSubCats, setSelectedSubCats] = useState([]);
 
   const { data, loading, error } = useFetch(
-    `/sub-categories?[filters][categories][id][$eq]=${catId}`
+    `/sub-categories?[filters][categories][id][$eq]=${catId}`,
+    selectedSubCats
   );
 
   const handleChange = e => {

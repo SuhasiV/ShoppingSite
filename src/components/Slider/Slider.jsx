@@ -24,18 +24,39 @@ const Slider = () => {
       >
         <div className="slider1">
           <img src={sliderImg1} alt="" />
-          <div className="slider1Title">CHICKCOTOUR</div>
-          <div className="slider1Text">
-            Fashion is the armor to survive the reality of everyday life.
+          <div className="info">
+            {' '}
+            <div className="slider1Title">CHICKCOTOUR</div>
+            <div className="slider1Text">
+              &quot;Fashion is the armor to <br />
+              survive the reality of everyday life.&quot;
+            </div>
+            <div className="button">Explore More</div>
           </div>
         </div>
         <div className="slider2">
           {' '}
           <img src={sliderImg2} alt="" />
+          <div className="info2">
+            <div className="slider1Title">SALE!!!</div>
+            <div className="slider1Text">
+              Apply coupon #MENSWEAR to get 10% off on every product from men
+              category!
+            </div>
+            <div className="button">Explore More</div>
+          </div>
         </div>
         <div className="slider3">
           {' '}
           <img src={sliderImg3} alt="" />
+          <div className="info3">
+            <div className="slider1Title">SALE!!!</div>
+            <div className="slider1Text">
+              Apply coupon #WOMENSWEAR to get 10% off on every product from
+              women category!
+            </div>
+            <div className="button">Explore More</div>
+          </div>
         </div>
       </div>
       <div className="icons">

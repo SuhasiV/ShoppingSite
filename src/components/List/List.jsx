@@ -9,6 +9,7 @@ const List = ({ subCats, sort, catId, maxPrice }) => {
     )}&[filters][price][$lte]=${maxPrice}&sort=price:${
       sort === 'asc' ? 'asc' : 'desc'
     }`
+
     //&[filters][price][$lte]=${maxPrice}&sort=price:${sort}`
 
     //const { data, loading, error } = useFetch(
@@ -16,6 +17,8 @@ const List = ({ subCats, sort, catId, maxPrice }) => {
     //  item => `&[filters][sub_categories][id][$eq]=${item}`
     //)}&[filters][price][$lte]=${maxPrice}&sort=price:${sort}`
   );
+
+  console.log(data);
 
   return (
     <div className="list">

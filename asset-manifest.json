@@ -1,19 +1,27 @@
 {
   "files": {
-    "main.css": "/ShoppingSite/static/css/main.52f91b50.css",
-    "main.js": "/ShoppingSite/static/js/main.fc629711.js",
+    "main.css": "/ShoppingSite/static/css/main.917cf1db.css",
+    "main.js": "/ShoppingSite/static/js/main.e8c2cedc.js",
     "static/js/787.7d594e25.chunk.js": "/ShoppingSite/static/js/787.7d594e25.chunk.js",
+    "static/media/winterCat.jpg": "/ShoppingSite/static/media/winterCat.76fd087c3bca361c68da.jpg",
+    "static/media/watchCat.jpg": "/ShoppingSite/static/media/watchCat.52c4718c64cf9e345f9e.jpg",
     "static/media/slider-2.jpg": "/ShoppingSite/static/media/slider-2.fb9415562d850f3a3b7c.jpg",
     "static/media/slider-1.jpg": "/ShoppingSite/static/media/slider-1.16d83e3cfa465a11a7b9.jpg",
+    "static/media/purseMCat.png": "/ShoppingSite/static/media/purseMCat.aac2389da7e136f5411b.png",
     "static/media/slider-3.jpg": "/ShoppingSite/static/media/slider-3.4532c1d9d23b71fbb6dc.jpg",
+    "static/media/skirtCat.jpg": "/ShoppingSite/static/media/skirtCat.2613fd362c85795a8321.jpg",
+    "static/media/winterMCat.jpg": "/ShoppingSite/static/media/winterMCat.574cf75e96ca909e52e8.jpg",
+    "static/media/purseCat.jpg": "/ShoppingSite/static/media/purseCat.181462c4e68da10ba379.jpg",
     "service-worker.js": "/ShoppingSite/service-worker.js",
+    "static/media/tShirtWCat.jpg": "/ShoppingSite/static/media/tShirtWCat.0be6c948c448d6e456fe.jpg",
+    "static/media/tshirtMCat.jpg": "/ShoppingSite/static/media/tshirtMCat.a270aa37a03094ce0624.jpg",
     "index.html": "/ShoppingSite/index.html",
-    "main.52f91b50.css.map": "/ShoppingSite/static/css/main.52f91b50.css.map",
-    "main.fc629711.js.map": "/ShoppingSite/static/js/main.fc629711.js.map",
+    "main.917cf1db.css.map": "/ShoppingSite/static/css/main.917cf1db.css.map",
+    "main.e8c2cedc.js.map": "/ShoppingSite/static/js/main.e8c2cedc.js.map",
     "787.7d594e25.chunk.js.map": "/ShoppingSite/static/js/787.7d594e25.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.52f91b50.css",
-    "static/js/main.fc629711.js"
+    "static/css/main.917cf1db.css",
+    "static/js/main.e8c2cedc.js"
   ]
 }

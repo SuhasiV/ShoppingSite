@@ -15,7 +15,7 @@ const Categories = () => {
               <img src="../purseMCat.png" alt="" />
             </div>
             <button className="button" style={{ background: '#b8ebf1' }}>
-              <Link className="link" to="/products/1">
+              <Link className="link" to="/ShoppingSite/products/1">
                 CLICK HERE TO SHOP FROM{' '}
                 <span style={{ fontWeight: 'bold' }}>MEN</span> CATEGORY NOW!!!
               </Link>
@@ -47,7 +47,7 @@ const Categories = () => {
               <img src="../purseCat.jpg" alt="" />
             </div>
             <button className="button" style={{ background: '#f1b8de' }}>
-              <Link className="link" to="/products/2">
+              <Link className="link" to="/ShoppingSite/products/2">
                 CLICK HERE TO SHOP FROM{' '}
                 <span style={{ fontWeight: 'bold' }}>Women</span> CATEGORY
                 NOW!!!

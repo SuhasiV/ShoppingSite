@@ -14,34 +14,29 @@ const Navbar = () => {
       <div className="wrapper">
         <div className="left">
           <div className="item">
-            <Link className="link" to="/products/1">
+            <Link className="link" to="/ShoppingSite/products/2">
               Women
             </Link>
           </div>
           <div className="item">
-            <Link className="link" to="/products/2">
+            <Link className="link" to="/ShoppingSite/products/1">
               Men
-            </Link>
-          </div>
-          <div className="item">
-            <Link className="link" to="/products/3">
-              Children
             </Link>
           </div>
         </div>
         <div className="center">
-          <Link className="link" to="/">
+          <Link className="link" to="/ShoppingSite">
             CHICKCOTOUR
           </Link>
         </div>
         <div className="right">
           <div className="item">
-            <Link className="link" to="/">
+            <Link className="link" to="/ShoppingSite/">
               ABOUT
             </Link>
           </div>
           <div className="item">
-            <Link className="link" to="/">
+            <Link className="link" to="/ShoppingSite/contact">
               CONTACT
             </Link>
           </div>

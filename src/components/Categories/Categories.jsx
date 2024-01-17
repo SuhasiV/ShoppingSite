@@ -1,5 +1,13 @@
 import { Link } from 'react-router-dom';
 import './Categories.scss';
+import purseMCat from '../../assets/purseMCat.png';
+import watchCatch from '../../assets/watchCat.jpg';
+import tshirtMCat from '../../assets/tshirtMCat.jpg';
+import winterMCat from '../../assets/winterMCat.jpg';
+import tShirtWCat from '../../assets/tShirtWCat.jpg';
+import purseCat from '../../assets/purseCat.jpg';
+import skirtCat from '../../assets/skirtCat.jpg';
+import winterCat from '../../assets/winterCat.jpg';
 const Categories = () => {
   return (
     <div className="categories">
@@ -7,15 +15,15 @@ const Categories = () => {
         <div className="row">
           <div className="col col-l">
             <div className="row">
-              <img src="../tShirtMCat.jpg" alt="" />
+              <img src={tshirtMCat} alt="" />
             </div>
           </div>
           <div className="col">
             <div className="row">
-              <img src="../purseMCat.png" alt="" />
+              <img src={purseMCat} alt="" />
             </div>
             <button className="button" style={{ background: '#b8ebf1' }}>
-              <Link className="link" to="/products/1">
+              <Link className="link" to="/ShoppingSite/products/1">
                 Click here for
                 <span style={{ fontWeight: 'bold' }}> MEN </span> CATEGORY
               </Link>
@@ -25,12 +33,12 @@ const Categories = () => {
         <div className="row">
           <div className="col">
             <div className="row">
-              <img src="../watchCat.jpg" alt="" />
+              <img src={watchCatch} alt="" />
             </div>
           </div>
           <div className="col col-l">
             <div className="row">
-              <img src="../winterMCat.jpg" alt="" />
+              <img src={winterMCat} alt="" />
             </div>
           </div>
         </div>
@@ -39,15 +47,15 @@ const Categories = () => {
         <div className="row">
           <div className="col col-l">
             <div className="row">
-              <img src="../tShirtWCat.jpg" alt="" />
+              <img src={tShirtWCat} alt="" />
             </div>
           </div>
           <div className="col">
             <div className="row">
-              <img src="../purseCat.jpg" alt="" />
+              <img src={purseCat} alt="" />
             </div>
             <button className="button" style={{ background: '#f1b8de' }}>
-              <Link className="link" to="/products/2">
+              <Link className="link" to="/ShoppingSite/products/2">
                 Click here for{' '}
                 <span style={{ fontWeight: 'bold' }}>WOMEN </span> CATEGORY
               </Link>
@@ -58,12 +66,12 @@ const Categories = () => {
         <div className="row">
           <div className="col">
             <div className="row">
-              <img src="../skirtCat.jpg" alt="" />
+              <img src={skirtCat} alt="" />
             </div>
           </div>
           <div className="col col-l">
             <div className="row">
-              <img src="../winterCat.jpg" alt="" />
+              <img src={winterCat} alt="" />
             </div>
           </div>
         </div>

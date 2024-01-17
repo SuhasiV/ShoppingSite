@@ -16,7 +16,9 @@ const Product = () => {
 
   return (
     <div className="product">
-      {loading ? (
+      {error ? (
+        'Something is wrong'
+      ) : loading ? (
         'loading'
       ) : (
         <>
